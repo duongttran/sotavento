@@ -1,26 +1,30 @@
 @charset "utf-8";
-
 html {
     box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
+}
 
 img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
+
 
 /* TYPOGRAPHY */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     color: #333;
 }
-
 
 body {
     font-family: 'Dosis', sans-serif;
@@ -38,7 +42,8 @@ a {
     transition: .5s ease;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     transition: .5s ease;
     color: goldenrod;
 }
@@ -49,10 +54,7 @@ button {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
 }
-
-
 
 header {
     display: flex;
@@ -62,21 +64,13 @@ header {
 
 .logo {
     width: 180px;
-    padding: 5px;  
+    padding: 5px;
 }
 
-
-nav {
-   
-}
-
-
-nav ul  {
+nav ul {
     display: flex;
-    
     justify-content: flex-end;
     list-style: none;
-    
 }
 
 nav ul li {
@@ -106,9 +100,7 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
     object-position: middle center;
-  
 }
-
 
 
 /* SELECTION */
@@ -117,35 +109,25 @@ nav a:hover {
     width: 100%;
     min-height: 110px;
     background-color: goldenrod;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;  
-    
-    
+    align-items: center;
     background-image: url(../img/grey-pattern.svg);
     background-size: 80%;
 }
 
-.selection > * {
-    
-   margin-top: 20px;
-   margin-bottom: 20px;
-   
-
+.selection>* {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-
 
 .dropdownbtn {
     background-color: transparent;
     border: 2px solid white;
     cursor: pointer;
-    
     padding: 15px;
     min-width: 200px;
-    
     font-size: 14px;
     color: white;
     font-weight: 500;
@@ -173,8 +155,6 @@ nav a:hover {
     color: orange;
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
-
-
 }
 
 .secondary-btn {
@@ -183,7 +163,6 @@ nav a:hover {
     cursor: pointer;
     padding: 15px 26px;
     min-width: 150px;
-    
     font-size: 14px;
     color: goldenrod;
     font-weight: 500;
@@ -202,7 +181,6 @@ nav a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
-   
 }
 
 .dropdown-content {
@@ -210,7 +188,7 @@ nav a:hover {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -219,7 +197,6 @@ nav a:hover {
     padding: 20px;
     line-height: 0;
     margin: 0;
-  
 }
 
 .dropdown-content p:hover {
@@ -230,8 +207,8 @@ nav a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    
 }
+
 
 /* ACCOMMODATION */
 
@@ -247,7 +224,7 @@ nav a:hover {
 }
 
 .one-third {
-    background-color:#3c8f92; 
+    background-color: darkcyan;
     height: 500px;
     display: flex;
     flex: 1 1 33%;
@@ -259,7 +236,7 @@ nav a:hover {
 .cta-content {
     margin: 0px;
     padding: 0 10%;
-    text-align: center;   
+    text-align: center;
 }
 
 .cta-content button {
@@ -286,6 +263,7 @@ nav a:hover {
     flex: 1 1 40%;
 }
 
+
 /* FULL CTA NO IMAGE */
 
 .full-cta {
@@ -301,7 +279,7 @@ nav a:hover {
     align-items: center;
 }
 
-.pattern-bgr { 
+.pattern-bgr {
     width: 100%;
     height: 100%;
     background-blend-mode: screen;
@@ -315,7 +293,6 @@ nav a:hover {
     background-color: transparent;
     border: 2px solid white;
     cursor: pointer;
-    
     padding: 15px 3%;
     font-size: 14px;
     color: white;
@@ -336,6 +313,7 @@ nav a:hover {
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
 }
+
 
 /* FULL CTA WITH IMAGE */
 
@@ -361,10 +339,10 @@ nav a:hover {
     text-align: center;
     width: 50%;
     /* add filter drop shadow or make picture more dark */
-    
 }
 
-    /* FOOD */
+
+/* FOOD */
 
 .food {
     display: flex;
@@ -374,7 +352,7 @@ nav a:hover {
 }
 
 .food .one-third {
-    background-color: #5d8d2f ;
+    background-color: #5d8d2f;
     height: 500px;
     display: flex;
     flex: 1 1 33%;
@@ -387,7 +365,7 @@ nav a:hover {
 .food .cta-content {
     margin: 0px;
     padding: 0 10%;
-    text-align: center;   
+    text-align: center;
 }
 
 .food .two-third {
@@ -406,8 +384,8 @@ nav a:hover {
     flex: 1 1 60%;
 }
 
-/* FOOTER */
 
+/* FOOTER */
 
 footer .pattern-bgr {
     height: 480px;
@@ -418,14 +396,11 @@ footer .pattern-bgr {
     align-items: center;
 }
 
-
-
 .big-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5%;
-
 }
 
 footer .logo {
@@ -441,13 +416,12 @@ footer .logo {
 input {
     padding: 14px;
     border: 2px solid white;
-    background-color: rgba(255,255,255,0.08);
+    background-color: rgba(255, 255, 255, 0.08);
     font-size: 16px;
     margin-right: 5px;
     color: #c8c8c8;
     max-height: 150px;
     border-radius: 0px;
-
 }
 
 .small-section {
@@ -466,30 +440,25 @@ input {
     display: flex;
     flex: 1 1 25%;
 }
-  
-  ::placeholder {
+
+ ::placeholder {
     font-family: 'Dosis', serif;
     font-size: 18px;
     color: lightgrey;
-  }
+}
 
 footer-nav {
     flex: 1 1 50%;
-    
 }
-
 
 footer-nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
-
     margin-left: 20px;
     margin-right: 20px;
-    
 }
 
 footer-nav ul li {
@@ -513,17 +482,43 @@ footer-nav ul a:hover {
 
 .login {
     display: flex;
-    
     flex: 1 1 25%;
-    
 }
-    
+
+
+/* GALERY PAGE */
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: row dense;
+}
+
+.container img {
+    display: block;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
 
 /* CONTACT PAGE */
+
 .contact {
     max-width: 980px;
     margin: 0 auto;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -536,7 +531,7 @@ footer-nav ul a:hover {
 
 .contact .resort {
     width: 30%;
-} 
+}
 
 .contact .reservation {
     width: 30%;
@@ -545,7 +540,6 @@ footer-nav ul a:hover {
 .contact input {
     padding: 14px;
     border: 2px solid #736357;
-   
     font-size: 16px;
     margin-right: 5px;
     color: #333;
@@ -599,6 +593,7 @@ form button {
 
 
 /* ABOUT PAGE */
+
 .about {
     height: 575px;
 }
@@ -607,7 +602,7 @@ form button {
     object-position: top center;
 }
 
-.pattern-bgr-white { 
+.pattern-bgr-white {
     width: 100%;
     height: 100%;
     background-image: url(../img/white-pattern.svg);
@@ -616,7 +611,7 @@ form button {
     color: #777;
 }
 
-.pattern-bgr-teal { 
+.pattern-bgr-teal {
     width: 100%;
     height: 100%;
     background-blend-mode: soft-light;
@@ -627,9 +622,7 @@ form button {
     color: white;
 }
 
-
-
-.pattern-bgr-gold { 
+.pattern-bgr-gold {
     width: 100%;
     height: 100%;
     background-blend-mode: overlay;
@@ -639,7 +632,6 @@ form button {
     color: white;
 }
 
-
 .content {
     padding: 5%;
 }
@@ -648,7 +640,7 @@ form button {
     margin-bottom: 2%;
 }
 
-.pattern-content  {
+.pattern-content {
     margin-bottom: 10px;
 }
 
@@ -659,8 +651,6 @@ form button {
 }
 
 .half-col:nth-child(odd) {
-   
-  
     display: flex;
     flex: 1 1 50%;
     flex-wrap: wrap;
@@ -669,35 +659,25 @@ form button {
 }
 
 .half-col:nth-child(even) {
-  
     display: flex;
     flex: 1 1 50%;
     flex-wrap: wrap;
     align-items: center;
- 
 }
-
-
 
 .half-col img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: middle center;
-  
 }
 
 .half-col-content {
     margin: 0px;
     padding: 10%;
-     
 }
 
-
-
 @media only screen and (max-width:1200px) and (min-width: 900px) {
- 
-
     .selection {
         width: 100%;
         min-height: 150px;
@@ -705,577 +685,417 @@ form button {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: center;  
-
+        align-items: center;
         background-image: url(../img/grey-pattern.svg);
         background-size: 150%;
     }
-    
-    .selection > * {
-       margin-top: 20px;
-       margin-bottom: 20px;
+    .selection>* {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-
     /* ACCOMMODATION */
-
     .accommodation {
         flex-direction: column;
-       
     }
-
     .one-third {
         width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
-        
     }
-
     .cta-content {
         padding: 5%;
     }
-
     .cta-content button {
         margin-bottom: 2%;
     }
-
     .two-third {
         width: 100%;
     }
-
     .food .one-third {
         margin-bottom: 0;
     }
-
     /* CONTACT PAGE */
-
     .contact {
         width: 90%;
     }
-
-  
-
-
 }
 
-    @media only screen and (max-width: 980px) and (min-width: 665px ) {
-        .cta-content button, .full-cta-img-content button {
-            margin-bottom: 2%;
-        }
-
-        .contact {
-            flex-direction: column;
-            width: 90%;
-        }
-
-        .contact form {
-            width: 100%;
-        }
-
-        .contact input {
-            width: 600px;
-        }
-
-        .contact textarea {
-            width: 800px;
-        }
-
-        .contact .resort {
-            width: 100%;
-        }
-
-        .contact .reservation {
-            width: 100%;
-        }
-
-
-
-        .half-cta {
-            flex-direction: column;
-        }
-
-        .half-col:nth-child(odd) {
-            margin-right: 0px;
-        }
-
-        .half-col:nth-child(even) {
-            margin-right: 0px;
-        }
-
-        .half-col-img {
-            margin-bottom: 10px;
-        }
-
-        .half-col-content {
-            margin: 0px;
-            padding: 5%;
-             
-        }
-
-        .content button {
-            margin-bottom: 3%;
-        }
-
+@media only screen and (max-width: 980px) and (min-width: 665px) {
+    .cta-content button,
+    .full-cta-img-content button {
+        margin-bottom: 2%;
     }
-
-        @media only screen and (max-width: 899px) and (min-width: 759px) {
-            .selection {
-                min-height: 200px;
-            }
-
-            .body {
-                font-size: 16px;
-                line-height: 26px;
-            }
-            .main-banner {
-                
-                margin-bottom: 10px;
-            }
-
-            .selection {
-                width: 100%;
-                height: 200px;
-                background-color: goldenrod;
-                display: flex;
-                flex-wrap: wrap;
-                
-                
-                background-image: url(../img/grey-pattern.svg);
-                background-size: 100%;
-            }
-
-            .selection > * {
-                padding: 0px;
-                margin: 0 auto;
-            }
-
-            .pattern-bgr {
-                background-size: 100%;
-                background-repeat: none;
-            }
-        
-
-            /* ACCOMMODATION */
-
-            .accommodation {
-                flex-direction: column;
-            }
-
-            .one-third {
-                width: 100%;
-                margin-right: 0;
-                margin-bottom: 10px;
-                
-            }
-
-            .cta-content {
-                padding: 10%;
-            }
-
-            .two-third {
-                width: 100%;
-                height: 400px;
-                /* delete height so the img is 500px height and focus on the center*/
-            }
-
-            .two-third img {
-                object-position: bottom;
-            }
-
-            /* FULL CTA WITH IMG */
-
-            .full-cta-img {
-                height: 440px;
-                margin-top: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .full-cta-img-content {
-                width: 70%;
-            }
-
-            .food {
-                flex-direction: column;
-            }
-
-            .food .two-third {
-                width: 100%;
-            }
-
-            .food .one-third {
-                width: 100%;
-                margin-top: 10px;
-                margin-left: 0;
-                margin-bottom: 0;
-            }
-
-            .food .cta-content {
-                padding: 10%;
-            }
-
-            /* FOOTER */
-
-            .small-section {
-                display: flex;
-                flex-direction: column;
-            }
-
-            /* CONTACT */
-
-            .contact {
-                flex-direction: column;
-                width: 90%;
-            }
-    
-            .contact form {
-                width: 100%;
-            }
-    
-            .contact input {
-                width: 80%;
-            }
-    
-            .contact textarea {
-                width: 80%;
-            }
-    
-            .contact .resort {
-                width: 100%;
-            }
-    
-            .contact .reservation {
-                width: 100%;
-            }
-
-
-            .half-col-img {
-                margin-bottom: 10px;
-            }
-
-            .half-col-content {
-                margin: 0px;
-                padding: 5%;
-                 
-            }
-
-            .content button {
-                margin-bottom: 5%;
-            }
-            
-        }
-
-            @media only screen and (max-width: 758px) and (min-width: 379px) {
-            
-
-            
-            nav {
-                max-width: 300px;
-            }   
-
-
-            /* ACCOMMODATION */
-
-            .accommodation {
-                flex-direction: column;
-            }
-
-            .one-third {
-                width: 100%;
-                margin-right: 0;
-                margin-bottom: 10px;
-                
-            }
-
-            .cta-content {
-                padding: 15% 10%;
-            }
-
-            .two-third {
-                width: 100%;
-                height: 400px;
-                /* delete height so the img is 500px height and focus on the center*/
-            }
-
-            .two-third img {
-                object-position: bottom;
-            }
-
-            /* FULL CTA WITH IMG */
-
-            .full-cta-img {
-                height: 440px;
-                margin-top: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .full-cta-img-content {
-                width: 70%;
-            }
-
-
-            .pattern-bgr {
-                background-size: 150%;
-            }
-
-
-            .food {
-                flex-direction: column;
-            }
-
-            .food .two-third {
-                width: 100%;
-            }
-
-            .food .one-third {
-                width: 100%;
-                margin-top: 10px;
-                margin-left: 0;
-                margin-bottom: 0;
-            }
-
-            .food .cta-content {
-                padding: 15% 10%;
-            }
-
-            .small-section {
-                flex-direction: column;
-            }
-
-
-            .content button {
-                margin-bottom: 7%;
-            }
-
-            /* CONTACT */
-
-            .contact {
-                flex-direction: column;
-                width: 90%;
-            }
-    
-            .contact form {
-                width: 100%;
-            }
-    
-            .contact input {
-                width: 80%;
-            }
-    
-            .contact textarea {
-                width: 80%;
-            }
-    
-            .contact .resort {
-                width: 100%;
-            }
-    
-            .contact .reservation {
-                width: 100%;
-            }
-
-            /* ABOUT */
-
-            .half-cta {
-                flex-direction: column;
-            }
-
-            .half-col:nth-child(odd) {
-                margin-right: 0px;
-            }
-
-            .half-col:nth-child(even) {
-                margin-right: 0px;
-            }
-
-            .half-col-img {
-                margin-bottom: 10px;
-            }
-
-            .pattern-bgr-gold, .pattern-bgr-teal { 
-            
-                background-size: 200%;
-              
-            }
-                
-            }
-
-                @media only screen and (max-width: 378px) {
-                    header .logo {
-                        width: 140px;
-                    }
-                    nav ul li {
-                        font-size: 14px;
-                        margin-left: 7%;
-                    }
-
-                    .selection {
-                        background-size: 300%;
-                        padding: 5%;
-                    }
-
-                    .pattern-bgr {
-                        background-size: 300%;
-                    }
-                    
-                    /* ACCOMMODATION */
-
-                    .accommodation {
-                        flex-direction: column;
-                    }
-
-                    .one-third {
-                        width: 100%;
-                        margin-right: 0;
-                        margin-bottom: 10px;
-                        
-                    }
-
-                    .cta-content {
-                        padding: 15% 10%;
-                    }
-
-                    .two-third {
-                        width: 100%;
-                        height: 400px;
-                        /* delete height so the img is 500px height and focus on the center*/
-                    }
-
-                    .two-third img {
-                        object-position: bottom;
-                    }
-
-                    /* FULL CTA WITH IMG */
-
-                    .full-cta-img {
-                        height: 440px;
-                        margin-top: 10px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .full-cta-img-content {
-                        width: 70%;
-                    }
-
-                    .food {
-                        flex-direction: column;
-                    }
-
-                    .food .two-third {
-                        width: 100%;
-                    }
-
-                    .food .one-third {
-                        width: 100%;
-                        margin-top: 10px;
-                        margin-left: 0;
-                        margin-bottom: 0;
-                    }
-
-                    .food .cta-content {
-                        padding: 15% 10%;
-                    }
-
-                    /* FOOTER */
-
-    
-
-                    footer .pattern-bgr {
-                        background-size: 300%;
-                        
-                        height: 600px;
-                    }
-
-                    footer .logo {
-                        width: 230px;
-                    }
-
-                    .small-section {
-                        flex-direction: column;
-                    }
-
-                    .search {
-                        flex-direction: column;
-                    }
-
-                    .search input {
-                        margin-right: 0;
-                        margin-bottom: 10px;
-                    }
-
-                    .newsletter {
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-
-                    .newsletter input {
-                        margin-right: 0;
-                        margin-bottom: 10px;
-                        
-                    }
-
-                    /* CONTACT */
-
-                    .contact {
-                        flex-direction: column;
-                        width: 85%;
-                    }
-            
-                    .contact form {
-                        width: 100%;
-                    }
-            
-                
-            
-                    .contact .resort {
-                        width: 100%;
-                    }
-            
-                    .contact .reservation {
-                        width: 100%;
-                    }
-
-                    /* ABOUT */
-                    .content {
-                        padding: 10%;
-                    }
-
-                    .half-cta {
-                        flex-direction: column;
-                    }
-
-                    .half-col:nth-child(odd) {
-                        margin-right: 0px;
-                    }
-
-                    .half-col:nth-child(even) {
-                        margin-right: 0px;
-                    }
-
-                    .half-col-img {
-                        
-                        margin-bottom: 10px;
-                    }
-
-                    .content button {
-                        margin-bottom: 10%;
-                    }
-
-                    .pattern-bgr-gold, .pattern-bgr-teal { 
-            
-                        background-size: 300%;
-                      
-                    }
-
-                }
-
-
-
-        
-
-             
-
+    .contact {
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact form {
+        width: 100%;
+    }
+    .contact input {
+        width: 600px;
+    }
+    .contact textarea {
+        width: 800px;
+    }
+    .contact .resort {
+        width: 100%;
+    }
+    .contact .reservation {
+        width: 100%;
+    }
+    .half-cta {
+        flex-direction: column;
+    }
+    .half-col:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .half-col:nth-child(even) {
+        margin-right: 0px;
+    }
+    .half-col-img {
+        margin-bottom: 10px;
+    }
+    .half-col-content {
+        margin: 0px;
+        padding: 5%;
+    }
+    .content button {
+        margin-bottom: 3%;
+    }
+}
+
+@media only screen and (max-width: 899px) and (min-width: 759px) {
+    .selection {
+        min-height: 200px;
+    }
+    .body {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .main-banner {
+        margin-bottom: 10px;
+    }
+    .selection {
+        width: 100%;
+        height: 200px;
+        background-color: goldenrod;
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(../img/grey-pattern.svg);
+        background-size: 100%;
+    }
+    .selection>* {
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .pattern-bgr {
+        background-size: 100%;
+        background-repeat: none;
+    }
+    /* ACCOMMODATION */
+    .accommodation {
+        flex-direction: column;
+    }
+    .one-third {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .cta-content {
+        padding: 10%;
+    }
+    .two-third {
+        width: 100%;
+        height: 400px;
+        /* delete height so the img is 500px height and focus on the center*/
+    }
+    .two-third img {
+        object-position: bottom;
+    }
+    /* FULL CTA WITH IMG */
+    .full-cta-img {
+        height: 440px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .full-cta-img-content {
+        width: 70%;
+    }
+    .food {
+        flex-direction: column;
+    }
+    .food .two-third {
+        width: 100%;
+    }
+    .food .one-third {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .food .cta-content {
+        padding: 10%;
+    }
+    /* FOOTER */
+    .small-section {
+        display: flex;
+        flex-direction: column;
+    }
+    /* CONTACT */
+    .contact {
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact form {
+        width: 100%;
+    }
+    .contact input {
+        width: 80%;
+    }
+    .contact textarea {
+        width: 80%;
+    }
+    .contact .resort {
+        width: 100%;
+    }
+    .contact .reservation {
+        width: 100%;
+    }
+    .half-col-img {
+        margin-bottom: 10px;
+    }
+    .half-col-content {
+        margin: 0px;
+        padding: 5%;
+    }
+    .content button {
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 758px) and (min-width: 379px) {
+    nav {
+        max-width: 300px;
+    }
+    /* ACCOMMODATION */
+    .accommodation {
+        flex-direction: column;
+    }
+    .one-third {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .cta-content {
+        padding: 15% 10%;
+    }
+    .two-third {
+        width: 100%;
+        height: 400px;
+        /* delete height so the img is 500px height and focus on the center*/
+    }
+    .two-third img {
+        object-position: bottom;
+    }
+    /* FULL CTA WITH IMG */
+    .full-cta-img {
+        height: 440px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .full-cta-img-content {
+        width: 70%;
+    }
+    .pattern-bgr {
+        background-size: 150%;
+    }
+    .food {
+        flex-direction: column;
+    }
+    .food .two-third {
+        width: 100%;
+    }
+    .food .one-third {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .food .cta-content {
+        padding: 15% 10%;
+    }
+    .small-section {
+        flex-direction: column;
+    }
+    .content button {
+        margin-bottom: 7%;
+    }
+    /* CONTACT */
+    .contact {
+        flex-direction: column;
+        width: 90%;
+    }
+    .contact form {
+        width: 100%;
+    }
+    .contact input {
+        width: 80%;
+    }
+    .contact textarea {
+        width: 80%;
+    }
+    .contact .resort {
+        width: 100%;
+    }
+    .contact .reservation {
+        width: 100%;
+    }
+    /* ABOUT */
+    .half-cta {
+        flex-direction: column;
+    }
+    .half-col:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .half-col:nth-child(even) {
+        margin-right: 0px;
+    }
+    .half-col-img {
+        margin-bottom: 10px;
+    }
+    .pattern-bgr-gold,
+    .pattern-bgr-teal {
+        background-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 378px) {
+    header .logo {
+        width: 140px;
+    }
+    nav ul li {
+        font-size: 14px;
+        margin-left: 7%;
+    }
+    .selection {
+        background-size: 300%;
+        padding: 5%;
+    }
+    .pattern-bgr {
+        background-size: 300%;
+    }
+    /* ACCOMMODATION */
+    .accommodation {
+        flex-direction: column;
+    }
+    .one-third {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .cta-content {
+        padding: 15% 10%;
+    }
+    .two-third {
+        width: 100%;
+        height: 400px;
+        /* delete height so the img is 500px height and focus on the center*/
+    }
+    .two-third img {
+        object-position: bottom;
+    }
+    /* FULL CTA WITH IMG */
+    .full-cta-img {
+        height: 440px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .full-cta-img-content {
+        width: 70%;
+    }
+    .food {
+        flex-direction: column;
+    }
+    .food .two-third {
+        width: 100%;
+    }
+    .food .one-third {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .food .cta-content {
+        padding: 15% 10%;
+    }
+    /* FOOTER */
+    footer .pattern-bgr {
+        background-size: 300%;
+        height: 600px;
+    }
+    footer .logo {
+        width: 230px;
+    }
+    .small-section {
+        flex-direction: column;
+    }
+    .search {
+        flex-direction: column;
+    }
+    .search input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .newsletter {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .newsletter input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    /* CONTACT */
+    .contact {
+        flex-direction: column;
+        width: 85%;
+    }
+    .contact form {
+        width: 100%;
+    }
+    .contact .resort {
+        width: 100%;
+    }
+    .contact .reservation {
+        width: 100%;
+    }
+    /* ABOUT */
+    .content {
+        padding: 10%;
+    }
+    .half-cta {
+        flex-direction: column;
+    }
+    .half-col:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .half-col:nth-child(even) {
+        margin-right: 0px;
+    }
+    .half-col-img {
+        margin-bottom: 10px;
+    }
+    .content button {
+        margin-bottom: 10%;
+    }
+    .pattern-bgr-gold,
+    .pattern-bgr-teal {
+        background-size: 300%;
+    }
+}
