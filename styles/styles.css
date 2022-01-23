@@ -103,6 +103,101 @@ nav a:hover {
 }
 
 
+/* CAROUSEL */
+
+.carousel {
+    /* max-width: 1200px; */
+    height: 500px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+.carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.7s;
+}
+
+.carousel-item {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: middle center;
+}
+
+.carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* .carousel-actions button {
+    cursor: pointer;
+    width: 200px!important;
+} */
+
+#carousel-button-prev {
+    margin-left: 2%;
+}
+
+#carousel-button-next {
+    margin-right: 2%;
+}
+
+.carousel-actions button {
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.carousel-actions button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* .carousel-item-hidden {
+    display: none;
+} */
+
+
 /* SELECTION */
 
 .selection {
@@ -306,7 +401,7 @@ nav a:hover {
     border: 2px solid white;
     cursor: pointer;
     padding: 15px 3%;
-    min-width: 200px;
+    /* min-width: 200px; */
     font-size: 14px;
     color: goldenrod;
     font-weight: 500;
