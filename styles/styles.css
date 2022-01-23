@@ -620,6 +620,14 @@ footer-nav ul a:hover {
     margin: 5% auto;
 }
 
+.contact-banner {
+    height: 450px;
+}
+
+.contact-banner img {
+    object-position: middle;
+}
+
 .contact form {
     width: 30%;
 }
@@ -690,11 +698,11 @@ form button {
 /* ABOUT PAGE */
 
 .about {
-    height: 575px;
+    height: 450px;
 }
 
 .about img {
-    object-position: top center;
+    object-position: bottom;
 }
 
 .pattern-bgr-white {
@@ -728,7 +736,7 @@ form button {
 }
 
 .content {
-    padding: 5%;
+    padding: 3% 5%;
 }
 
 .content button {
@@ -810,6 +818,10 @@ form button {
         margin-bottom: 0;
     }
     /* CONTACT PAGE */
+    /* .contact-banner img {
+        object-fit: cover;
+        object-position: middle;
+    } */
     .contact {
         width: 90%;
     }
